@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Título da aba -->
+        <title>Star Wars - Characters</title>
+        <!-- Conexão com o arquivo Style.css que está dentro da pasta CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Imagem com a logo do Star Wars -->
+        <img src="https://imageshack.com/a/img922/3783/oyvsRd.png" class="center">"
+    </head>    
+
+    <!-- Body com a imagem de fundo -->
+    <body class=bg-img >
+        <div >                       
+           
+                <div class='info-container'>
+
+                   
+                    <!-- Carregar biblioteca de ícone -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <!-- Form -->
+                    <form class="example">
+                    <!-- Barra de Pesquisa-->
+                    <input type="text" id="search" placeholder="Search for a Person {Ex: Yoda, Luke Skywalker, Anakin Skywalker} ..." name="search">
+                    <!-- Botão que recebe a função getInfo, que está localizada dentro do arquivo app_People.js -->
+                    <button type="button" id="button" name="button" onclick="getInfo()" ><i class="fa fa-search" ></i></button>
+                    </form>
+
+                   <div>
+
+                    <!--Div que contem o retângulo que fica as informações do personagem -->
+                    <div class='rectangle-left'>
+                            <!-- Parágrafos que contém as informações do personagem-->     
+                            <p id='name'></p>
+                            <p id='height'></p>        
+                            <p id='mass'></p>
+                            <p id='birth-year'></p>                                              
+                            <p id='hairColor'></p>
+                            <p id='skinColor'></p>
+                            <p id='gender'></p>
+                            <p id='homeworld'></p>                            
+                            <p id='species'></p>
+                            <p id='vehicles'></p>
+                            <p id='films'></p>      
+
+                            <br><br><br>
+
+                            <!-- Div que contém os recomendados -->
+                            <div id='recommended'>
+
+                                <a id='recommended_1'></a>
+                                <a id='recommended_2'></a>
+                                <a id='recommended_3'></a>
+
+                            </div>
+                            
+                    </div>
+
+                    <!-- Retângulo da direita, onde contém as informações do Top Searched-->
+                    <div class='rectangle-right'>  
+
+                        <!-- Imagem que contém o gif da coroa -->
+                        <img src='https://media3.giphy.com/media/YNzDdWY3ILLmkY59Xo/source.gif' class='crown'>
+                        
+                        <!-- Tabela que armazena os mais pesquisados: Nome e Votos-->
+                        <table>
+
+                            <p>TOP MOST SEARCHED</p>
+                            <thead>
+                                <tr>
+                                    <th>Names</th>
+                                    <th>Votes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyResultados"></tbody>
+                            <tfoot></tfoot>
+
+                        </table>                                               
+                                                                                  
+                    </div>                     
+                  </div>                     
+                </div>                
+            </div>
+        </div>
+
+        <!-- Conexão com Axios e o arquivo JavaScript: app_People-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js" integrity="sha512-bYkaBWaFtfPIMYt9+CX/4DWgfrjcHinjerNYxQmQx1VM76eUsPPKZa5zWV8KksVkBF/DaHSADCwil2J5Uq2ctA==" crossorigin="anonymous"></script>
+        <script src="./scripts/app_People.js" charset="utf-8"></script>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "AlexandreGuirado_CaseStarWars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app_People.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreGuirado/case_starwars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexandreGuirado/case_starwars/issues"
+  },
+  "homepage": "https://github.com/AlexandreGuirado/case_starwars#readme"
+}
